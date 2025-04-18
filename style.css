@@ -1,3 +1,167 @@
-h1 {
-    color:rgb(79, 187, 36);
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    color:white;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  /*" " Reset */
+
+
+  @font-face {
+    font-family: "MyCustomFont";
+    src: url(/fonts/Ubuntu/Ubuntu-Light.ttf);
+  }
+
+  * {
+    font-family: MyCustomFont , sans-serif;
+  }
+
+
+  h1 {
+    font-size: 26px;
+  }
+
+.picture {
+    background-image: url(images/jungle-bridge1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:80vh;
+    height: 100vh;
+
+}
+
+.content {
+    flex: 1;
+    background-image:url(/images/jungle-bridge.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+body {
+    display: flex;
+}
+
+
+.title {
+  width: clamp(400px,50vw,900px);
+  align-self: center;
+}
+
+.container {
+  max-height: 400px;
+  background-color: rgba(197, 223, 201, 0.781);
+  flex:1;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 200px;
+  padding: 40px;
+}
+
+.group {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap:40px;
+}
+
+button {
+  align-self: center;
+
+  height:40px;
+  width:190px;
+  font-size: 20px;;
+  border-radius: 5px;
+  border-color: rgb(7, 136, 46);
+  background-color: rgb(146, 211, 146);
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  align-self: center;
+}
+
+form {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+
+input:valid {
+  border-color:green;
+  background-color: rgb(202, 248, 202);
+}
+
+input:invalid {
+  border-color:rgb(128, 0, 0);
+  background-color: rgb(248, 202, 202);
+}
+
+input {
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+a {
+  color:white;
+}
+
+h2 {
+  margin-top:200px;
+  padding:50px;
+  background-color: rgba(0, 128, 0, 0.637);
+  
+}
+
+.line {
+  width:10px;
+  background-color: rgb(4, 61, 4);
+}
+
+.credit {
+  margin-top:-20px;
 }
